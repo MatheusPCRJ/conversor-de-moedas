@@ -26,3 +26,18 @@ document.querySelector('#convertaCripto').addEventListener('click', function(eve
     document.querySelector('.valorConvertidoEmCripto').innerHTML = valorEmReal
 
 })
+
+// Conversor de Quilômetro para Ano-Luz
+document.querySelector('#convertaQuilometro').addEventListener('click', function(event){
+    event.preventDefault();
+
+    let valorEmQuilometro = document.querySelector('#valorDoClienteEmQuilometro').value;
+    let anoLuz = 9460800000000;
+
+   
+    let valorEmReal = valorEmQuilometro / anoLuz;
+        // valorEmReal = valorEmReal.toFixed(8)
+
+    document.querySelector('.valorConvertidoEmAnoLuz').innerHTML = valorEmReal
+
+})
